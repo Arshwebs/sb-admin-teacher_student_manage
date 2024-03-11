@@ -32,7 +32,7 @@ function AddStudents() {
 
 		notify();
 
-		// setTimeout(() => navigate("/dashboard"), 5000);
+		setTimeout(() => navigate("/dashboard"), 5000);
 	}
 
 	useEffect(() => {

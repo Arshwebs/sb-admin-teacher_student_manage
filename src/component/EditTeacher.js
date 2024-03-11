@@ -1,5 +1,5 @@
 import {useParams} from "react-router-dom";
-import React, {useEffect, useContext, useState} from "react";
+import React, {useEffect, useState} from "react";
 import Button from "react-bootstrap/Button";
 import {Formik, Field, Form} from "formik";
 import * as yup from "yup";
@@ -15,10 +15,6 @@ function EditTeacher() {
 	let navigate = useNavigate();
 	let {id, teachers} = useParams();
 	let {state, dispatch} = useManagementProvider();
-
-	let allStudents = state.teachers.map(e => {
-		return e.students;
-	});
 
 	const notify = () => toast("User edited successfully!");
 
